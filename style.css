@@ -1,0 +1,186 @@
+/* | IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* | CSS RESET  */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* | UTILITY STYLES */
+.cp {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+}
+
+/* | VARIABLES */
+:root {
+	/* | COLORS  */
+	--soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--cyan-view: hsla(178, 100%, 50%, 0.5);
+	--very-dark-blue-main-bg: hsl(217, 54%, 11%);
+	--very-dark-blue-card-bg: hsl(216, 50%, 16%);
+	--very-dark-blue-line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+
+	/* | FONTS  */
+	--h1-font: 24px 'Outfit';
+	--body-font: 18px 'Outfit';
+	--small-font: 16px 'Outfit';
+}
+
+/* | GENERAL STYLES */
+html {
+	max-width: 1440px;
+	height: 900px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: var(--soft-blue);
+	font: var(--body-font);
+	line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--very-dark-blue-main-bg);
+}
+
+.container {
+	width: 350px;
+	height: 590px;
+	padding: 24px;
+	background-color: var(--very-dark-blue-card-bg);
+	border-radius: 15px;
+	display: flex;
+	flex-flow: column;
+	gap: 15px;
+}
+
+.img-section {
+	width: 100%;
+	border-radius: 7px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-section img {
+	width: 100%;
+	height: auto;
+}
+
+.img-section p {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.img-section p:hover {
+	background: var(--cyan-view) url(img/icon-view.svg) no-repeat center;
+}
+
+section.text-section {
+	display: flex;
+	flex-flow: column;
+	gap: 20px;
+	border-bottom: 1px solid var(--soft-blue);
+}
+
+h1 {
+	font-size: var(--h1-font);
+	width: 150px;
+}
+
+h1:hover {
+	color: cyan;
+}
+
+.balance {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.balance > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.amount {
+	color: var(--cyan);
+}
+
+.amount img {
+	height: 22px;
+}
+
+.small {
+	font: var(--small-font);
+}
+
+.small img {
+	height: 15px;
+}
+
+footer.footer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 16px;
+}
+
+.avatar {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 1px solid var(--white);
+	overflow: hidden;
+}
+
+.avatar img {
+	width: 100%;
+	height: auto;
+}
+
+span.cp:hover {
+	color: var(--cyan);
+}
+
+@media screen and (max-width: 750px) {
+	/* | VARIABLES */
+	:root {
+		/* | FONTS  */
+		--h1-font: 22px 'Outfit';
+		--body-font: 16px 'Outfit';
+		--small-font: 14px 'Outfit';
+	}
+
+	html {
+		height: 667px;
+	}
+
+	.container {
+		width: 330px;
+		height: 550px;
+		gap: 16px;
+	}
+
+	section.text-section {
+		gap: 16px;
+	}
+
+	div.div {
+		margin-top: 5px;
+	}
+}
