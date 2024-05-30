@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/nft-preview-card-component)
+- Solution URL: (https://github.com/Ikenna04/nft-preview-card-component)
 - Live Site URL: (https://ikenna04.github.io/nft-preview-card-component/)
 
 ## My process

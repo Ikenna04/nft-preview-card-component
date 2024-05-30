@@ -36,8 +36,7 @@ img {
 
 /* | GENERAL STYLES */
 html {
-	max-width: 1440px;
-	height: 900px;
+	height: 100vh;
 }
 
 body {
@@ -164,10 +163,6 @@ span.cp:hover {
 		--h1-font: 22px 'Outfit';
 		--body-font: 16px 'Outfit';
 		--small-font: 14px 'Outfit';
-	}
-
-	html {
-		height: 667px;
 	}
 
 	.container {
